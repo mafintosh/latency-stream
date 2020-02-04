@@ -1,6 +1,6 @@
 {
   "name": "latency-stream",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A stream that can mimic network latency",
   "main": "index.js",
   "dependencies": {
