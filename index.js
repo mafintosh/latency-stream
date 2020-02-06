@@ -5,6 +5,7 @@ module.exports = class LatencyStream extends Transform {
     if (typeof range === 'number') range = [range, range]
 
     super({
+      highWaterMark: 16 * 1024 * 1024,
       mapWritable (data) {
         return { time: Date.now(), data }
       }
